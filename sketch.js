@@ -45,7 +45,7 @@ function draw() {
     }
   }
 
-  if(spacecraft.x<=iss.x && spacecraft.y<=iss.y){
+  if(spacecraft.x<=iss.x-10 && spacecraft.y<=iss.y+65){
     hasDocked=true
     textSize(20)
     fill("white");
