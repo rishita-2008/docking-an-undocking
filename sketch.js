@@ -44,6 +44,13 @@ function draw() {
       spacecraft.y=spacecraft.y-2
     }
   }
+
+  if(spacecraft.x<=iss.x && spacecraft.y<=iss.y){
+    hasDocked=true
+    textSize(20)
+    fill("white");
+    text("docking successful", 300,300)
+  }
   
   drawSprites();
 }
